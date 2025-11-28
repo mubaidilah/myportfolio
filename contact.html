@@ -78,7 +78,7 @@
     <input type="hidden" name="_captcha" value="false">
 
     <!-- Redirect after submit -->
-    <input type="hidden" name="_next" value="home_page.html">
+    <input type="hidden" name="_next" value="contact.html?success=true">
 
     <label class="flex flex-col">
         <span class="pb-2 text-base font-medium text-zinc-900 dark:text-white">Full Name</span>
@@ -137,3 +137,11 @@
 </div>
 </body>
 </html>
+
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success')) {
+        alert("Your message has been sent successfully!");
+    }
+</script>
