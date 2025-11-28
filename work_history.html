@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Work Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                "primary": "#13b6ec",
+                "background-light": "#f6f8f8",
+                "background-dark": "#101d22",
+            },
+            fontFamily: {
+                "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "0.25rem", 
+                "lg": "0.5rem", 
+                "xl": "0.75rem", 
+                "full": "9999px"
+            },
+        },
+    },
+}
+</script>
+
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    body { min-height: max(884px, 100dvh); }
+</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center justify-between border-b border-gray-200/10 bg-background-light/80 p-4 pb-3 backdrop-blur-sm dark:bg-background-dark/80">
+    <button class="flex size-10 shrink-0 items-center justify-center rounded-full text-gray-600 dark:text-gray-300">
+        <a href="home_page.html" class="hover:text-slate-700 dark:hover:text-slate-300 transition">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+        </a>
+    </button>
+
+    <h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white">
+        Work Experience
+    </h1>
+
+    <div class="w-10 shrink-0"></div>
+</div>
+
+<!-- Main Content -->
+<main class="flex-grow px-4 pb-8 pt-6">
+<div class="grid grid-cols-[auto_1fr] gap-x-4">
+
+<!-- Timeline Entry 1 -->
+<div class="flex flex-col items-center">
+    <div class="flex size-8 items-center justify-center rounded-full bg-primary">
+        <span class="material-symbols-outlined text-lg text-white">star</span>
+    </div>
+    <div class="w-px grow bg-gray-300 dark:bg-gray-700"></div>
+</div>
+
+<div class="flex flex-1 flex-col pb-10">
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900/50">
+        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Jan 2020 - Dec 2023</p>
+        <h2 class="mt-1 text-lg font-semibold text-gray-900 dark:text-white">Lead Photographer & Developer</h2>
+        <p class="text-base text-primary">Creative Studio XYZ</p>
+
+        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-600 dark:text-gray-300">
+            <li>Led a creative team for photography and web development projects from concept to launch.</li>
+            <li>Developed custom portfolio websites for clients, increasing user engagement by 30%.</li>
+            <li>Implemented new workflows that reduced project completion time by an average of 15%.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Timeline Entry 2 -->
+<div class="flex flex-col items-center">
+    <div class="flex size-8 items-center justify-center rounded-full border-2 border-primary bg-background-light dark:bg-background-dark">
+        <span class="material-symbols-outlined text-lg text-primary">work</span>
+    </div>
+    <div class="w-px grow bg-gray-300 dark:bg-gray-700"></div>
+</div>
+
+<div class="flex flex-1 flex-col pb-10">
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900/50">
+        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Mar 2018 - Dec 2019</p>
+        <h2 class="mt-1 text-lg font-semibold text-gray-900 dark:text-white">Web Developer</h2>
+        <p class="text-base text-primary">Tech Solutions Inc.</p>
+
+        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-600 dark:text-gray-300">
+            <li>Collaborated with the design team to build responsive and intuitive user interfaces.</li>
+            <li>Maintained and managed multiple client websites, ensuring 99.9% uptime.</li>
+            <li>Contributed to the development of a large-scale e-commerce web application.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Timeline Entry 3 -->
+<div class="flex flex-col items-center">
+    <div class="flex size-8 items-center justify-center rounded-full border-2 border-primary bg-background-light dark:bg-background-dark">
+        <span class="material-symbols-outlined text-lg text-primary">work</span>
+    </div>
+    <div class="w-px grow bg-gray-300 dark:bg-gray-700"></div>
+</div>
+
+<div class="flex flex-1 flex-col pb-10">
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900/50">
+        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Jun 2016 - Feb 2018</p>
+        <h2 class="mt-1 text-lg font-semibold text-gray-900 dark:text-white">Junior Photographer</h2>
+        <p class="text-base text-primary">Visual Arts Co.</p>
+
+        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-600 dark:text-gray-300">
+            <li>Assisted senior photographers in various photoshoots including products, events, and portraits.</li>
+            <li>Responsible for editing and retouching photos for client marketing materials.</li>
+            <li>Managed studio equipment and digital asset inventory.</li>
+        </ul>
+    </div>
+</div>
+
+</div>
+</main>
+</div>
+</body>
+</html>

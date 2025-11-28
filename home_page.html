@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personal Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13b6ec",
+            "background-light": "#f6f8f8",
+            "background-dark": "#101d22",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<main class="flex-grow">
+<div class="flex p-4 @container pt-12">
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="Professional headshot of the portfolio owner" style='background-image: url("img/profil.jpg");'></div>
+<div class="flex flex-col items-center justify-center text-center max-w-md">
+<p class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">M. Ubaidilah</p>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">
+    Fotografer | Web Developer | Beginner In Cyber Security
+</p>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal mt-2"> Hello, I'm a photographer, web developer, and beginner in cyber security. I create photos with strong composition and vibrant colors, design websites that are responsive, fast, and functional, and continue learning system security to keep every project safe. By combining visuals, technology, and security, I help every work look more lively, professional, and trustworthy. Here, you can explore some of my best creations. </p></div>
+</div>
+<div class="flex w-full max-w-xs gap-3 @[480px]:w-auto pt-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-primary/20 text-primary dark:text-primary text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto">
+<a href="bagian.html">View Works</a>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto">
+<span class="truncate">Download CV</span>
+</button>
+</div>
+</div>
+</div>
+<div class="@container px-4 py-6">
+<div class="gap-2 px-4 grid-cols-[repeat(auto-fit,minmax(80px,_1fr))] grid max-w-md mx-auto">
+<a href="https://www.linkedin.com/in/m-ubaidilah-270595251?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
+   target="_blank" 
+   class="block">
+    <div class="flex flex-col items-center gap-2 py-2.5 text-center cursor-pointer">
+        <div class="rounded-full bg-slate-200 dark:bg-slate-800 p-3">
+            <span class="material-symbols-outlined text-slate-800 dark:text-white">business_center</span>
+        </div>
+        <p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">LinkedIn</p>
+    </div>
+</a>
+
+<a href="https://github.com/mubaidilah" target="_blank" class="block">
+    <div class="flex flex-col items-center gap-2 py-2.5 text-center cursor-pointer">
+        <div class="rounded-full bg-slate-200 dark:bg-slate-800 p-3">
+            <span class="material-symbols-outlined text-slate-800 dark:text-white">code</span>
+        </div>
+        <p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">GitHub</p>
+    </div>
+</a>
+
+<div class="flex flex-col items-center gap-2 py-2.5 text-center">
+<div class="rounded-full bg-slate-200 dark:bg-slate-800 p-3">
+<span class="material-symbols-outlined text-slate-800 dark:text-white">palette</span>
+</div>
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Dribbble</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 flex-col">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">grid_view</span>
+<a href="my_project.html" class="flex flex-col gap-1">
+    <h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">My Projects</h2>
+    <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">See my best work</p>
+</a>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 flex-col">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">work_history</span>
+<div class="flex flex-col gap-1">
+<a href="work_history.html" class="flex flex-col gap-1">
+    <h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">Work History</h2>
+    <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Explore my professional experience</p>
+</a>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 flex-col">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">person</span>
+<div class="flex flex-col gap-1">
+<a href="about_me.html" class="flex flex-col gap-1">
+    <h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">About Me</h2>
+    <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Learn more about me</p>
+</a>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 flex-col">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">mail</span>
+<div class="flex flex-col gap-1">
+<a href="contact.html" class="flex flex-col gap-1">
+    <h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">Contact Me</h2>
+    <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Let's get in touch</p>
+</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0">
+<div class="flex gap-2 border-t border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<p class="text-primary text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="my_project.html">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">grid_view</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium leading-normal tracking-[0.015em]">Projects</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="about_me.html">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium leading-normal tracking-[0.015em]">About</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="contact.html">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium leading-normal tracking-[0.015em]">Contact</p>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

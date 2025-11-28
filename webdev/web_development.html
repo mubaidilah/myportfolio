@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Development Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13b6ec",
+              "background-light": "#f6f8f8",
+              "background-dark": "#101d22",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<!-- <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style> -->
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 backdrop-blur-sm">
+<div class="flex size-12 shrink-0 items-center justify-start text-black dark:text-white">
+<a href="../my_project.html">
+    <span class="material-symbols-outlined !text-2xl">
+        arrow_back_ios_new
+    </span>
+</a>
+</div>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-black dark:text-white">Web Development</h1>
+<div class="size-12 shrink-0"></div> <!-- Spacer -->
+</header>
+<main class="flex-1">
+<!-- Chips / Filter -->
+<div class="flex gap-3 overflow-x-auto p-4 pt-2 scrollbar-hide">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary px-4">
+<p class="text-sm font-medium leading-normal text-white">All</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4">
+<p class="text-sm font-medium leading-normal text-black dark:text-white">E-commerce</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4">
+<p class="text-sm font-medium leading-normal text-black dark:text-white">Portfolio</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4">
+<p class="text-sm font-medium leading-normal text-black dark:text-white">Corporate</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4">
+<p class="text-sm font-medium leading-normal text-black dark:text-white">Landing Page</p>
+</div>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg" data-alt="Screenshot of an e-commerce platform homepage" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCF6j2U9BrYK9iXh22xS0QsGYaXyY7-NcEihOP9gvvaPshKBeiOF8UjXJMVpZjJGlqpUp9CCNYII4mnu6BSQsn7_KRHKO126f87AX-inpFRbOGjsyriWqpZyVCsULIRNMQk2nHjYd-LvZAgbLK2hJ6vgLrno7d4vOyDGeGTrW1ZPX1M0VdrfsjnitqIlxVGgd6W2IX97GIL8gGdTP6gzLsUa_0BFv6xrz3WHUlC7Clq56HB7VUqRso4349BbYYS3yP97Ccfan-G9LA");'></div>
+<div>
+<p class="text-base font-medium leading-normal text-black dark:text-white">E-commerce Platform</p>
+<p class="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Complete redesign for an online retail experience.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg" data-alt="Screenshot of a minimalist designer portfolio website" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZyYeEmRuyUYrS_AUB12umS_iHp9AG9m67kll6AbvA_PYy9fabsbDgnm1zP_rlBSSitoM5nYNUfDnp1hl1nBDv4n7ku0bD4GwkZ4MUO2NHA2Zy-4QAj3VPcRS87FLj8lrCeNeuSGT0mZwpvzcoNQIEAsQmbdlP8lQojinZvWZ9JeCEr2o0de-fgIdOwaR-mvAYauVm5mvTMPClF6mqQbr4ediK4nkLFIXxj0Pym_92Kid2A2tVJ2pObJ7IlpDMbAyiiwbjKmoi-DQ");'></div>
+<div>
+<p class="text-base font-medium leading-normal text-black dark:text-white">Designer Portfolio</p>
+<p class="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">A minimalist site to showcase creative work.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg" data-alt="Screenshot of a modern tech startup's corporate website" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKZ9Zd20ZeSK3e_ZElGs8zuX_Eg1NonsJ0nGafVS6xx7z3OJ46Gm8LIopDu7wsFyz3e6AhzVBgutoxJeZQfnNxvr12rNlqPdjI2v5swln7echgxhJIFua_LHs33f_gHmrW1OLrvEGPPUr5jMtz-dJ0bus_QEU8ysdvenu3KL9Rcz9_DxHa5kcq3Hl04NmqtkSctvdZiwjfsGRrWhYXhlyN5zrL8ZKHNU0lZt-2L1nk7-95nOdCw3wrOQ3_Gld30N_hB106Ucj_7ts");'></div>
+<div>
+<p class="text-base font-medium leading-normal text-black dark:text-white">Tech Startup Site</p>
+<p class="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">A responsive website for a growing company.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg" data-alt="Screenshot of an online booking system interface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCC5biOQuWETxRrgM9uz1CuIfE08Q26r_zYqQyLtplZLD5djKCYpYLDtD6HMCEvasp6UP-7bYQo7NFKdYZVq4PbMW4nTOTNAORMf3lG5Yk3nBDQTfMxSsBT5FAaodW80b8MsyrEhSsouZf_1VDjQPcZtEUz5uPqlEMB81l_LhceWXz1Q-VEN2zxu25mGm7EdXVnxrwhuAws_68TqMWTgr3UwcVIc5ZJ4GeIVetFA25KaOZNF_tp_2qgETEphVPAitu5Az-mzhT3zs0");'></div>
+<div>
+<p class="text-base font-medium leading-normal text-black dark:text-white">Online Booking System</p>
+<p class="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Streamlined booking for a local business.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg" data-alt="Screenshot of a high-conversion product marketing landing page" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7OFE6MFLrc7_le8bWG6lE1VZKeqETx1h6isszBVPMqPOhTM2r4RsktYEiiM0W0nAXizUrdxFJRY-vJfi5YPa2ZryEpHbvenU0aD-0i6KasWAxl30ES9esdghSJUW2zKiUyKgaHLlqgb1yuffQkJ1ZTUk7Ux_VjHdF89Mkhe-HbOlp_x0FrELdkxUdQGuxKf6pFo-t68qXQAMkqTIPbi0Ji-GfUKvwcy_ue7sIDbQrlQ93vD12K-aTDeZKU-_nHWZE63krB4Qz730");'></div>
+<div>
+<p class="text-base font-medium leading-normal text-black dark:text-white">Marketing Landing Page</p>
+<p class="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">High-conversion page for a product launch.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg" data-alt="Screenshot of an interactive data visualization web app" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgfxcMNi4kAbLLe5NRjJaWrBEj6POXFquUEXnjA7djWfgAsR_l-wpro3DZke-hxIJEwV9-m9XHJN3rig-XYIScnJFlB4_4ccegXsRhx2fU8EmGqDHfZf7gokx2mXylQ7Bc2pNa3lF0ifz9hYrSZY42n6vCfZDqcV2T0txPREno3C0oyILHvgTA232kxehQgBAYF8piycORqpc_hbEPmIYR63W5hzBdbuzBgdqdlYzAwDDLmIazU9RfElIB2Rfq8Tj9HM0Lt1ySf4k");'></div>
+<div>
+<p class="text-base font-medium leading-normal text-black dark:text-white">Data Visualization</p>
+<p class="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Displaying complex data in an intuitive way.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Nav Bar -->
+<footer class="sticky bottom-0 z-10 flex border-t border-gray-200 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 px-4 pb-3 pt-2 backdrop-blur-sm">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined !text-2xl">home</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined !text-2xl" style="font-variation-settings: 'FILL' 1;">cases</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Portfolio</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined !text-2xl">mail</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Contact</p>
+</a>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13b6ec",
+            "background-light": "#f6f8f8",
+            "background-dark": "#101d22",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex h-16 items-center justify-between bg-background-light/80 px-4 backdrop-blur-sm dark:bg-background-dark/80">
+
+    <!-- Tombol kembali -->
+    <a href="home_page.html" class="text-slate-800 dark:text-slate-200">
+        <span class="material-symbols-outlined text-2xl">
+            arrow_back
+        </span>
+    </a>
+
+    <h1 class="text-lg font-bold text-slate-900 dark:text-white">My Project</h1>
+
+    <div class="w-6"></div>
+</header>
+
+<main class="flex-1">
+<div class="px-4 pb-4">
+<div class="flex gap-3 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none]">
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary px-4">
+<p class="text-sm font-semibold text-white">All</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-slate-200 px-4 dark:bg-slate-800">
+<a href="photography/photography.html" class="text-sm font-medium text-slate-600 dark:text-slate-300">
+    Photography
+</a>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-slate-200 px-4 dark:bg-slate-800">
+<a href="webdev/web_development.html" class="text-sm font-medium text-slate-600 dark:text-slate-300">
+    Web Development
+</a>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 p-4 pt-0">
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg">
+<div class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm text-white">code</span>
+</div>
+<div class="aspect-[3/4] w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="A clean and modern website design displayed on a laptop screen, focusing on travel imagery." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtyGkvNeeY7Umd_tzyp1is76bor45E4SFkdT4UWjeRQ7OzzXc3tkrglhXKhE6OFMTObJFs3qlbxD1-Sq-HTV_4dgu_noo4o9nrT50wnjZ2OmjO5aht9SqvIWFr7fl0h90gzuBdhwgQS_yCiQh5BL-Mw7nmf4D09LivnpRu50jhLgq-VuxcXWpftTEEzu4drppio35uxClldQ197Xpfav5la9kxCa9NOUGuS73bKTO38HP81n4I2MI_UJlPJExqmJp6NnBC8ZgoCMQ");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-3 text-white">
+<h3 class="text-base font-bold leading-tight">Situs Travel "Nusa"</h3>
+<p class="text-xs font-medium text-slate-200">Web Development</p>
+</div>
+</div>
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg">
+<div class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm text-white">photo_camera</span>
+</div>
+<div class="aspect-[3/4] w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="A stylish arrangement of branded stationery, including business cards and letterheads." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQbxLnpAip8X1TaWLZplhbRELd-wZJNoKr-wiABm_bZKxvF-ntTIvMUMmJx4NlUh9BzpP8rinTznlH5DpmxcAooLLTY_ms_KEn8kyhE_2EstZ2zJ9mWxiCW6g2DdpDzUGT330ghuswTYXny0q5ZO2p0oT15NdAqTNT6alhdF-hRi-Cvfq75_xk8kYKJRdImpK13mxRz_5rdxBLljcotx1HvA_p2yLTAM2AjfXKwl2UEJJCMXjL62XvGAU-qWoWUGmI0X4EyWWHhBs");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-3 text-white">
+<h3 class="text-base font-bold leading-tight">Brand Identity "Kopi Senja"</h3>
+<p class="text-xs font-medium text-slate-200">Fotografi Produk</p>
+</div>
+</div>
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg">
+<div class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm text-white">photo_camera</span>
+</div>
+<div class="aspect-[3/4] w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="An artistic digital illustration with vibrant colors and abstract shapes." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR3phxRrSopp1BmsvOuRoTYyZkjf4h5eaXxvPkaZt7h-bEfvEV6Pb1sQPh3aaPUTUsa_5IPYPn9Vb_Ob8qJ8itrMlegGHh9izNQNaWfJI2drGrNUxt555BVlp_oUpMAMBW0IsFxT1ZcrumugxA_EY9vqNcEeLGh8hjDUtrhyjNzhfm1CGdxpiLt8qB6Da0YjIqlTra_BzY0UamX1SWB_Cogn3fe7uPfw-o6x02G6ZXnUdtlV8KWZ5uCj41skj5X928keAsC7ft7qI");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-3 text-white">
+<h3 class="text-base font-bold leading-tight">Potret Perkotaan</h3>
+<p class="text-xs font-medium text-slate-200">Fotografi Jalanan</p>
+</div>
+</div>
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg">
+<div class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm text-white">code</span>
+</div>
+<div class="aspect-[3/4] w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Abstract gradient in shades of blue and purple for a mobile app mockup." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmH-P5yPOB7zLqXjikGwiRqEiD93NhA6lmDHmNvT-ao4K6cHfBCaN-OVBHs4KD9ATUButM-B40QzmJApj4Z1WFykBwYcQo3p_qBB4lvPMFfKIH1l3rgTF7W46_pgm6L0KZ-560kUHsLN2OD17vASu-4ht_yfcaFp4_PkdO7pQ6V_7WULu8c_Gwxoja6N7fWM_8wjskSAuDfW3xO9kZrLAJS1fkNOvFzAF90iBdKW12h-4aHDl0gnGVo2rphNzK3XG0IdifmB9-Gqc");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-3 text-white">
+<h3 class="text-base font-bold leading-tight">Aplikasi E-commerce</h3>
+<p class="text-xs font-medium text-slate-200">Web Development</p>
+</div>
+</div>
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg">
+<div class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm text-white">code</span>
+</div>
+<div class="aspect-[3/4] w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="A sleek user interface for a finance management application, showing graphs and charts." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDusdWAZ7RPi88gRR7ibXOlIIaB6P0OhutNXwPumO3Z-FnLPG3SX8oaNP9wtCSai3aTAkdPeimyewJhtJlndIuzjbI7qsmvdlvxICUrY-CzXaDpusgx7DLDQuiY_ZTHCm2TSTPlOcESbBvfdIoAvsuYEZb2rQb51EJQPlZ5i3tmoWCQmzO5kRXX4RBXIncoZvocsI54fS8waVcOKjjg6x3iA5mArYBuAhpRHvVufRQeMU74LYlBCIlzncF1VWEbBECAwzvr3Yu5J6k");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-3 text-white">
+<h3 class="text-base font-bold leading-tight">Dashboard Analitik</h3>
+<p class="text-xs font-medium text-slate-200">Web Development</p>
+</div>
+</div>
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg">
+<div class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm text-white">photo_camera</span>
+</div>
+<div class="aspect-[3/4] w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Colorful and engaging social media post designs shown on a smartphone screen." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZNsYXDzm0PA4tF2oK1Rzn8IVx4Jvc7avEGZ-F17xgzLrdAdhFWNcgQLjum6WhmIgyoz_lV8n3HPIHBtNchvHq5--Yn5z2Pv8XsmmNJL5mbnZhmTpum-EM4CezIvXiP9R0FT_bMVofAVNt9lX6Cl8gss1sF3e6E5PNojKTu_yjr2-e6T6t2vDlKxciiYZRS35Ss7Qaf49cdj-TgVzaZV-72OgpTBKFc0GXVLaMD9szLd7QfcrwTMh73OEcwOGJTQHGn-ASUnyHpWA");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-3 text-white">
+<h3 class="text-base font-bold leading-tight">Pernikahan di Bali</h3>
+<p class="text-xs font-medium text-slate-200">Fotografi Acara</p>
+</div>
+</div>
+</div>
+</main>
+<button class="fixed bottom-6 right-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-3xl text-white">add</span>
+</button>
+</div>
+
+</body></html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Me - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#13b6ec",
+                    "background-light": "#f6f8f8",
+                    "background-dark": "#101d22",
+                },
+                fontFamily: {
+                    "display": ["Inter", "sans-serif"]
+                },
+                borderRadius: {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+                },
+            },
+        },
+    }
+</script>
+
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+</style>
+
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex h-16 items-center border-b border-white/10 bg-background-light/80 px-4 backdrop-blur-sm dark:bg-background-dark/80">
+    <button class="flex size-10 items-center justify-center rounded-full text-zinc-500 hover:bg-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-800">
+        <a href="home_page.html" class="hover:text-slate-700 dark:hover:text-slate-300 transition">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+        </a>
+    </button>
+    <h1 class="flex-1 text-center text-lg font-bold text-zinc-900 dark:text-white">Contact Me</h1>
+    <div class="size-10"></div>
+</header>
+
+<main class="flex flex-1 flex-col p-4">
+
+<!-- Profile Avatar and Headline -->
+<div class="flex flex-col items-center pt-6 text-center">
+    <img alt="Profile photo of a smiling man with a neutral background." class="h-24 w-24 rounded-full object-cover"
+        src="img/profil.jpg"/>
+    <h2 class="mt-4 text-[32px] font-bold leading-tight tracking-tight text-zinc-900 dark:text-white">Let's Connect</h2>
+    <p class="mt-2 max-w-md text-base font-normal leading-normal text-zinc-600 dark:text-zinc-400">
+        I’m available to discuss new projects or collaboration opportunities.
+    </p>
+</div>
+
+<form action="https://formsubmit.co/mubaidilah26@gmail.com" method="POST" class="mt-10 space-y-5">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_next" value="home_page.html">
+
+    <label class="flex flex-col">
+        <span class="pb-2 text-base font-medium text-zinc-900 dark:text-white">Full Name</span>
+        <input class="form-input h-14 w-full rounded-lg border border-zinc-300 bg-background-light p-4 text-base text-zinc-900 placeholder:text-zinc-500 
+        focus:border-primary focus:ring-2 focus:ring-primary/30 dark:border-zinc-700 dark:bg-zinc-900/50 dark:text-white"
+        name="name" placeholder="Enter your full name" type="text" required/>
+    </label>
+
+    <label class="flex flex-col">
+        <span class="pb-2 text-base font-medium text-zinc-900 dark:text-white">Your Email</span>
+        <input class="form-input h-14 w-full rounded-lg border border-zinc-300 bg-background-light p-4 text-base text-zinc-900 placeholder:text-zinc-500 
+        focus:border-primary focus:ring-2 focus:ring-primary/30 dark:border-zinc-700 dark:bg-zinc-900/50 dark:text-white"
+        name="email" placeholder="Enter your email address" type="email" required/>
+    </label>
+
+    <label class="flex flex-col">
+        <span class="pb-2 text-base font-medium text-zinc-900 dark:text-white">Your Message</span>
+        <textarea class="form-textarea w-full rounded-lg border border-zinc-300 bg-background-light p-4 text-base text-zinc-900 placeholder:text-zinc-500 
+        focus:border-primary focus:ring-2 focus:ring-primary/30 dark:border-zinc-700 dark:bg-zinc-900/50 dark:text-white"
+        name="message" placeholder="Write your message here..." rows="4" required></textarea>
+    </label>
+
+    <button type="submit"
+        class="flex h-14 w-full items-center justify-center rounded-xl bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/30 
+        hover:scale-[1.02] active:scale-[0.98] transition-transform duration-200">
+        Send Message
+    </button>
+
+</form>
+
+
+<!-- Alternative Contact Methods -->
+<div class="mt-12 text-center">
+    <p class="text-sm font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Or reach me through</p>
+    <div class="mt-6 flex items-center justify-center gap-4">
+
+        <a aria-label="LinkedIn" class="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-200 text-zinc-600 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700" href="#">
+            <!-- LinkedIn Icon -->
+            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.75c0-1.4-1.1-2.5-2.5-2.5S11 12.85 11 14.25V19h-3v-9h2.9v1.35C11.4 10.7 12.45 10 13.75 10c2.9 0 5.25 2.35 5.25 5.25z"></path></svg>
+        </a>
+
+        <a aria-label="GitHub" class="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-200 text-zinc-600 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700" href="#">
+            <!-- GitHub Icon -->
+            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49..."></path></svg>
+        </a>
+
+        <a aria-label="Email" class="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-200 text-zinc-600 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700" href="#">
+            <span class="material-symbols-outlined text-2xl">mail</span>
+        </a>
+    </div>
+</div>
+
+<div class="h-10"></div>
+</main>
+
+</div>
+</body>
+</html>
